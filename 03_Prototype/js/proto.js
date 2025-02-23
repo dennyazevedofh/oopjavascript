@@ -60,5 +60,3 @@ console.log(dog.raca) // Vira-lata
 console.log(dog.cor) // Marrom
 dog.latir() // Au au
 dog.uivar() // Auuuuuuuuuuuu
-
-

@@ -22,10 +22,10 @@ console.log(pastor.raca) // Pastor Alemão
 console.log(cachorro.raca) // SRD
 
 // Criando classe em JavaScript - usando construtor (function)
-function criaCachoro(nome, raça, patas, cor) {
+function criaCachoro(nome, raca, patas, cor) {
 	let cachorro = Object.create({})
 	cachorro.nome = nome
-	cachorro.raça = raça
+	cachorro.raca = raca
 	cachorro.patas = patas
 	cachorro.cor = cor
 	cachorro.latir = function() {
@@ -36,18 +36,18 @@ function criaCachoro(nome, raça, patas, cor) {
 
 let pitbull = criaCachoro('Toby', 'Pitbull', 4, 'Marrom')
 console.log(pitbull.nome) // Toby
-console.log(pitbull.raça) // Pitbull
+console.log(pitbull.raca) // Pitbull
 pitbull.latir()
 
 let viraLata = criaCachoro('Rex', 'Vira Lata', 4, 'Cinza')
 console.log(viraLata.nome) // Rex
-console.log(viraLata.raça) // Vira Lata
+console.log(viraLata.raca) // Vira Lata
 viraLata.latir()
 
 // Criando classe em JavaScript - usando construtor por new
-function Cachorro(nome, raça, patas, cor) {
+function Cachorro(nome, raca, patas, cor) {
 	this.nome = nome
-	this.raça = raça
+	this.raça = raca
 	this.patas = patas
 	this.cor = cor
 	this.latir = function() {
@@ -57,11 +57,10 @@ function Cachorro(nome, raça, patas, cor) {
 
 let poodle = new Cachorro('Bilu', 'Poodle', 4, 'Branco')
 console.log(poodle.nome) // Bilu
-console.log(poodle.raça) // Poodle
+console.log(poodle.raca) // Poodle
 poodle.latir()
 
 let husky = new Cachorro('Thor', 'Husky', 4, 'Cinza')
 console.log(husky.nome) // Thor
-console.log(husky.raça) // Husky
+console.log(husky.raca) // Husky
 husky.latir()
-
